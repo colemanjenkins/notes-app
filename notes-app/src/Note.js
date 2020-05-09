@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import InputBase from '@material-ui/core/InputBase';
 
 const useStyles = makeStyles({
     root: {
@@ -14,7 +15,8 @@ const useStyles = makeStyles({
         maxHeight: 260,
         margin: '30px',
         color: 'red',
-        display: 'inline-block'
+        display: 'inline-block',
+        overflow: 'scroll'
     },
     bullet: {
         display: 'inline-block',
@@ -23,26 +25,40 @@ const useStyles = makeStyles({
     },
     title: {
         fontSize: 14,
+        color: 'gray',
     },
     pos: {
         marginBottom: 12,
+    },
+    input: {
+
     },
 });
 
 export default function Note() {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
-    const title = 'Note 1'
+    let five = 1;
+    const defaultTitle = 'Note ' + five;
     const body = "Here's some text!"
 
     return (
         <Card className={classes.root}>
             <CardContent>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    {title}
+                <Typography className={classes.title} gutterBottom>
+                    <InputBase
+                        className={classes.title}
+                        defaultValue={defaultTitle}
+                        inputProps={{ 'aria-label': 'naked' }}
+                    />
                 </Typography>
                 <Typography className='noteBody'>
-                    {body}
+                    <InputBase
+                        className={classes.input}
+                        defaultValue="Enter note here"
+                        inputProps={{ 'aria-label': 'naked' }}
+                        multiline
+                    />
                 </Typography>
             </CardContent>
         </Card>
