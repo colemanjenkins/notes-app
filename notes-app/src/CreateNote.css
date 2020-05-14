@@ -1,6 +1,15 @@
 .create-note-button {
     display: inline-block;
     text-align: right;
+    min-width: 200px;
+    max-width: 260px;
+    min-height: 200px;
+    max-height: 260px;
+    margin: 30px;
+}
+
+.button {
+    color: gray;
 }
 
 /* p {
