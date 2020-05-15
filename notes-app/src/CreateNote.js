@@ -14,7 +14,10 @@ class CreateNote extends Component {
     render() {
         return (
             <Card className="create-note-button">
-                <Button className="button" onClick={() => this.props.buttonPass}>
+                {/* <button onClick={() => this.props.buttonPass()}>
+                    + New Note
+                </button> */}
+                <Button className="button" onClick={() => this.props.buttonPass()}>
                     New Note
                     <AddIcon className="button" />
                 </Button>

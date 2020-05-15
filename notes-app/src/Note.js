@@ -9,8 +9,6 @@ import InputBase from '@material-ui/core/InputBase';
 import './Note.css';
 
 
-const body = "Here's some text!";
-
 class Note extends Component {
 
 
