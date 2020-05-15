@@ -6,10 +6,6 @@ import Button from '@material-ui/core/Button';
 import './CreateNote.css'
 
 class CreateNote extends Component {
-    constructor(props) {
-        super(props);
-
-    }
 
     render() {
         return (

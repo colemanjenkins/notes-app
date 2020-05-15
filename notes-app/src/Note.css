@@ -19,12 +19,16 @@
 }
 
 .title {
-    font-size: 14;
-    color: gray;
+    font-size: 14px;
+    color: white;
 }
 
 .bullet {
     display: inline-block;
     margin: 0 2px;
     transform: scale(0.8);
+}
+
+.noteBody {
+    color: red;
 }
