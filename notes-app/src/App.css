@@ -12,39 +12,3 @@
     justify-content: start;
 }
 
-.full-note {
-    border: solid;
-}
-
-.root {
-    min-width: 400px;
-    max-width: 500px;
-    min-height: 400px;
-    max-height: 600px;
-    margin: 30px;
-    margin-top: 0px;
-    color: red;
-    display: inline-block;
-    overflow: scroll;
-}
-
-
-.pos {
-    margin-bottom: 12px,
-}
-
-.title {
-    font-size: 14px;
-    color: white;
-}
-
-.bullet {
-    display: inline-block;
-    margin: 0 2px;
-    transform: scale(0.8);
-}
-
-.noteBody {
-    color: red;
-    overflow: scroll;
-}
