@@ -21,6 +21,7 @@ class App extends Component {
   }
 
   createNewNote = () => {
+    console.log("createNote()")
     // let array = [...this.state.notes];
     const newNote = {
       title: "Note " + (this.state.notes.length + 1),
@@ -36,7 +37,13 @@ class App extends Component {
     });
   };
 
+  handleContentChange(event, note) {
+
+  }
+
   deleteNote = delNote => {
+    console.log("deleteNote()")
+    console.log(delNote)
     // let array = [...this.state.notes];
     // let index = array.indexOf(delNote);
     // if (index != -1) {

@@ -16,6 +16,7 @@ import Button from '@material-ui/core/Button';
 import './Notes.css';
 
 
+
 class Notes extends Component {
     timeStamp = (time) => {
         let months = ["January", "February", "March",
@@ -52,13 +53,14 @@ class Notes extends Component {
         return output;
     }
 
+
     render() {
         return (
             <div>
                 {this.props.notes.map(note => {
                     return (
-                        <Card className='root'>
-                            <CardContent className="root">
+                        <Card className='root' classes={{ root: "change-spacing" }}>
+                            <CardContent className='root' style={{ border: "1000px" }}>
 
                                 <div style={{ float: "right", color: "gray", fontSize: "13px" }} >
                                     Created {this.timeStamp(note.time)}
@@ -77,6 +79,7 @@ class Notes extends Component {
                                         defaultValue={note.title}
                                         inputProps={{ 'aria-label': 'naked' }}
                                         style={{ fontSize: "20px", color: "black" }}
+                                        fullWidth='true'
                                     />
                                 </Typography>
                                 <Typography className="noteBody">
@@ -84,6 +87,7 @@ class Notes extends Component {
                                         defaultValue={note.content}
                                         inputProps={{ 'aria-label': 'naked' }}
                                         multiline
+                                        fullWidth='true'
                                     />
                                 </Typography>
                             </CardContent>

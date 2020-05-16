@@ -12,8 +12,13 @@
     color: red;
     display: inline-block;
     overflow: scroll;
+    vertical-align: top;
 }
 
+
+.change-spacing {
+    border: 0px;
+}
 
 .pos {
     margin-bottom: 12px,
