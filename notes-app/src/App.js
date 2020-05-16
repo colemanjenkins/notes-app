@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
-import Title from './Title.js';
-// import NoteView from './NoteView.js';
-import Note from './Note.js';
-import CreateNote from './CreateNote.js';
-import './App.css';
-// import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-// import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import CloseIcon from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
-import DeleteNote from './DeleteNote.js'
-import './Note.css';
+
+import Title from './Title.js';
+import CreateNote from './CreateNote.js';
+import './App.css';
 
 
 class App extends Component {
@@ -38,6 +32,7 @@ class App extends Component {
 
     let output = '';
     let date = new Date(time);
+
     //format: Month ##day, ####year at hour:min
 
     output += months[date.getMonth()] + ' ';
@@ -61,9 +56,6 @@ class App extends Component {
       minOutput = "0" + minutes;
 
     output += minOutput + " " + amOrPm;
-
-    // //temp
-    // output += ' ' + date.getSeconds();
 
     return output;
   }
@@ -117,13 +109,9 @@ class App extends Component {
         </div>
         <div className="notes">
           {this.state.notes.map(note => {
-            /* {defaultNotes.map(note => { */
             return (
               <Card className='root'>
                 <CardContent className="root">
-                  {/* <div style={{ float: "right", color: "red", fontSize: "13px" }}>
-                        Delete
-                    </div> */}
 
                   <div style={{ float: "right", color: "gray", fontSize: "13px" }} >
                     Created {this.timeStamp(note.time)}
@@ -153,10 +141,6 @@ class App extends Component {
                   </Typography>
                 </CardContent>
               </Card>
-
-              // <Note title={note.title} content={note.content} 
-              // className="note" time={note.time} 
-              // deleteNote={this.deleteNote(note)} />
             );
           })}
         </div>

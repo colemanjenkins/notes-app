@@ -13,15 +13,6 @@ class CreateNote extends Component {
                 New Note
                 <AddIcon className="button" />
             </Button>
-            // <Card className="create-note-button">
-            //     {/* <button onClick={() => this.props.buttonPass()}>
-            //         + New Note
-            //     </button> */}
-            //     <Button className="button" onClick={() => this.props.buttonPass()}>
-            //         New Note
-            //         <AddIcon className="button" />
-            //     </Button>
-            // </Card>
         )
     }
 }

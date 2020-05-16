@@ -1,3 +1,8 @@
+/*
+Now, unused file, here for reference
+*/
+
+
 import React, { Component } from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -8,7 +13,6 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import CloseIcon from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
-import DeleteNote from './DeleteNote.js'
 import './Note.css';
 
 
