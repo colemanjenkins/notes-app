@@ -1,4 +1,13 @@
 .note {
     display: inline;
     color: red;
+    justify-content: start;
+}
+
+.create {
+    padding: 20px;
+}
+
+.notes {
+    justify-content: start;
 }
