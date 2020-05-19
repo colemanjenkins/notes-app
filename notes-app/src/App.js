@@ -5,6 +5,8 @@ import Notes from './Notes.js'
 import CreateNote from './CreateNote.js';
 import './App.css';
 
+/*Having trouble getting local host to run. 
+Comments on code have still been made.  */
 
 class App extends Component {
   constructor(props) {
